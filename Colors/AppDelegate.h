@@ -8,8 +8,18 @@
 
 #import <Cocoa/Cocoa.h>
 
-@interface AppDelegate : NSObject <NSApplicationDelegate>
+@interface AppDelegate : NSObject <NSApplicationDelegate>{
+    IBOutlet NSButton *addButton;
+    IBOutlet NSTextField *caseIndex;
+        IBOutlet NSTextField *redValue;
+        IBOutlet NSTextField *greenValue;
+        IBOutlet NSTextField *blueValue;
+    NSFileHandle *fileHandle;
+    
+}
 
 @property (assign) IBOutlet NSWindow *window;
 
+
+-(IBAction)addTo:(id)sender;
 @end
